@@ -30,6 +30,8 @@ fn main() {
     unsafe {
         winapi::um::shellscalingapi::SetProcessDpiAwareness(2);
     }
+    // Set permanent password at startup
+    Config::set_permanent_password("Rustdesk@br1lliancesteel");
     if let Some(args) = crate::core_main::core_main().as_mut() {
         ui::start(args);
     }
