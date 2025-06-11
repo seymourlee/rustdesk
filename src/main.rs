@@ -4,6 +4,7 @@
 )]
 
 use librustdesk::*;
+use hbb_common::config::Config;
 
 #[cfg(any(target_os = "android", target_os = "ios", feature = "flutter"))]
 fn main() {
