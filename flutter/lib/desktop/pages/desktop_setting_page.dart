@@ -63,7 +63,8 @@ enum SettingsTabKey {
 class DesktopSettingPage extends StatefulWidget {
   final SettingsTabKey initialTabkey;
   static final List<SettingsTabKey> tabKeys = [
-    SettingsTabKey.general,
+    // Remove or comment out the general settings tab
+    // SettingsTabKey.general,
     if (!isWeb &&
         !bind.isOutgoingOnly() &&
         !bind.isDisableSettings() &&
